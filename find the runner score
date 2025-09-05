@@ -1,0 +1,10 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    
+    # Remove duplicates by converting to set
+    unique_scores = list(set(arr))
+    unique_scores.sort()
+    
+    # The second largest is at index -2
+    print(unique_scores[-2])
